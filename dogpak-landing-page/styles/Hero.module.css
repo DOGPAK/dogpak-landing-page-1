@@ -1,0 +1,32 @@
+.hero {
+    height: 85vh;
+    background: url("../static/front_page_image.png") no-repeat center center/cover;
+    background-position-y: 100%;
+    padding: 0 3rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content {
+    width: 725px
+}
+
+.content > h1 {
+    font-size: 64px;
+}
+
+.content > p {
+    font-weight: 300;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    line-height: 32px;
+    display: block;
+}
+
+.fundedText {
+    margin-top: 1rem;
+    font-size: 14px !important;
+    color: #ECECEC;
+}
