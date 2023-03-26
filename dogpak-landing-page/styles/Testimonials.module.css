@@ -1,0 +1,71 @@
+.holder {
+    height: 300px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    background-color: #234248;
+}
+
+.holder > svg {
+    width: 50px;
+}
+
+.testimonials {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    /*gap: 10rem;*/
+
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonials::-webkit-scrollbar {
+    display: none;
+}
+
+/*.testimonialGroup {*/
+/*    scroll-snap-align: start;*/
+/*    flex: 0 0 auto;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    width: 100%;*/
+/*}*/
+
+.testimonial {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 100%;
+    width: 50%;
+    padding: 0 3rem;
+}
+
+.testimonialHeading > p {
+    font-weight: 300;
+}
+
+.testimonialDescription {
+    font-weight: 300;
+}
+
+@media screen and (max-width: 960px) {
+    .testimonial {
+        width: 100%;
+    }
+}
