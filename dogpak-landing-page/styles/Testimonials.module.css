@@ -69,3 +69,17 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 760px) {
+    .holder {
+        padding: 0;
+    }
+
+    .testimonialHeading > p {
+        font-size: 14px;
+    }
+
+    .testimonialDescription {
+        font-size: 12px;
+    }
+}

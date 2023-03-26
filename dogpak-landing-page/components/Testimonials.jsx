@@ -6,7 +6,7 @@ const Testimonials = () => {
 
     const scroll = (direction) => {
         const { current } = scrollRef;
-        let scrollAmount = screen.width <= 550 ? 500 : 1250;
+        let scrollAmount = screen.width <= 550 ? 250 : 1250;
 
         if (direction === "left") {
             current.scrollLeft -= scrollAmount;
