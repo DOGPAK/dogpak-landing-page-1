@@ -10,11 +10,15 @@
 }
 
 .content {
-    width: 725px
+    width: 725px;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.content > h1 {
+.heading > span {
     font-size: 64px;
+    font-family: "Anton", sans-serif;
 }
 
 .content > p {
@@ -29,4 +33,39 @@
     margin-top: 1rem;
     font-size: 14px !important;
     color: #ECECEC;
+}
+
+@media screen and (max-width: 960px) {
+    .content {
+        width: 550px;
+    }
+    .heading > span {
+        font-size: 48px;
+    }
+
+    .content > p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .content > p {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .heading > span::after {
+        content: "\a";
+        white-space: pre;
+    }
 }

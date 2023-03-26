@@ -4,7 +4,6 @@ import Image from "next/image";
 import logo from "../static/logo.png";
 
 const Navbar = () => {
-
     const showNavbar = () => {
         const mobileNavbar = document.querySelector(`.${styles.mobileNavbar}`);
         mobileNavbar.classList.toggle(styles.show);
