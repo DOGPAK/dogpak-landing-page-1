@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
 import Advantages from "@/components/Advantages";
 import Story from "@/components/Story";
+import CTA from "@/components/CTA";
 
 export default function Home() {
     return (
@@ -26,6 +27,7 @@ export default function Home() {
                 <Testimonials />
                 <Advantages />
                 <Story />
+                <CTA />
             </main>
         </>
     );

@@ -1,0 +1,109 @@
+.holder {
+    height: 100vh;
+    background: url("../static/cta_image.png") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10rem 0;
+    gap: 2rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 625px;
+}
+
+.text > h1 {
+    font-size: 64px;
+    color: black;
+}
+
+.text > p {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: 100%;
+}
+
+.emailGroup {
+    display: flex;
+}
+
+.emailInput {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 500px;
+}
+
+.emailButton {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 22px;
+    padding: 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    border-left: solid 5px rgba(35, 66, 72, 0.5);
+    width: 150px;
+    font-family: "Anton", sans-serif;
+    cursor: pointer;
+}
+
+.buyButton {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 22px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Anton", sans-serif;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .holder {
+        padding: 5rem 1rem;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .inputs, .emailInput {
+        width: 100%;
+    }
+
+    .text > h1 {
+        font-size: 52px;
+    }
+
+    .text > p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .text > h1 {
+        font-size: 48px;
+    }
+
+    .holder {
+        padding: 12.5rem 1rem;
+    }
+
+    .emailInput {
+        font-size: 14px;
+    }
+}
