@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
 import Advantages from "@/components/Advantages";
+import Story from "@/components/Story";
 
 export default function Home() {
     return (
@@ -24,6 +25,7 @@ export default function Home() {
                 <Hero />
                 <Testimonials />
                 <Advantages />
+                <Story />
             </main>
         </>
     );

@@ -1,0 +1,95 @@
+.holder {
+    padding: 5rem 0 0 3rem;
+    display: flex;
+}
+
+.text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 0 0 1rem 0;
+}
+
+.textContent > h1 {
+    color: #2E8596;
+    margin-bottom: 1rem;
+    font-size: 64px;
+}
+
+.textParagraphs {
+    font-weight: 300;
+    width: 85%;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.readMoreButton {
+    display: flex;
+    cursor: pointer;
+    font-size: 32px;
+    color: #C76A49;
+    align-items: center;
+    font-family: "Anton", sans-serif;
+}
+
+.readMoreButton > svg {
+    width: 50px;
+}
+
+.readMoreButton > svg:last-child {
+    margin-left: -25px;
+}
+
+.storyImage {
+    object-fit: cover;
+    /*height: 75%;*/
+    height: auto;
+    width: 40%;
+}
+
+@media screen and (max-width: 1050px) {
+    .textContent > h1 {
+        font-size: 42px;
+    }
+    .textParagraphs {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .readMoreButton {
+        font-size: 28px;
+    }
+    .readMoreButton > svg {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .holder {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .text {
+        padding: 3rem 1rem;
+    }
+    .storyImage {
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+    }
+
+    .textContent > h1 {
+        font-size: 38px;
+    }
+    .textParagraphs {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .readMoreButton {
+        font-size: 24px;
+    }
+    .readMoreButton > svg {
+        width: 35px;
+    }
+}
