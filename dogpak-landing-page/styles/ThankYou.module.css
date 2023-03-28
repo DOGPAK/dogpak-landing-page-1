@@ -46,4 +46,8 @@
     .text, .cta, .thanking {
         padding: 3rem 2rem;
     }
+
+    .cta > a {
+        width: 100%;
+    }
 }

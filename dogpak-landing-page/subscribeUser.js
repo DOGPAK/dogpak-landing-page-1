@@ -1,4 +1,8 @@
 export default async function (email) {
+    if (email === "") {
+        alert("Please enter an email address");
+        return;
+    }
     const res = await fetch("/api/subscribe", {
         body: JSON.stringify({
             email: email
@@ -8,5 +12,4 @@ export default async function (email) {
         },
         method: "POST"
     }).then(() => window.location.href = "/thank-you");
-
 }

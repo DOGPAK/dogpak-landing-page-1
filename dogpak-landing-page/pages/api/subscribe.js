@@ -8,9 +8,9 @@ export default async (req, res) => {
     }
 
     try {
-        const AUDIENCE_ID = "0c8e2b3345";
-        const API_KEY = "79cc1282e174adb6eeb2ac13bc98b5bb-us12";
-        const DATACENTER = "us12";
+        const AUDIENCE_ID = process.env.AUDIENCE_ID;
+        const API_KEY = process.env.API_KEY;
+        const DATACENTER = process.env.DATACENTER;
         const data = {
             email_address: email,
             status: "subscribed"

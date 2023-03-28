@@ -11,8 +11,6 @@ const EmailInput = () => {
         await subscribeUser(email);
 
         setEmail("");
-
-
     }
 
     return (
