@@ -22,6 +22,8 @@ const Navbar = () => {
 
     const showNavbar = () => {
         const mobileNavbar = document.querySelector(`.${styles.mobileNavbar}`);
+        const burger = document.querySelector(`.${styles.burger}`);
+        burger.classList.toggle(styles.activeBurger);
         mobileNavbar.classList.toggle(styles.show);
     };
 
@@ -42,22 +44,24 @@ const Navbar = () => {
             >BUY NOW</a>
 
             <div className={styles.burger} onClick={showNavbar}>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"/>
-                </svg>
+                {/*<svg*/}
+                {/*    xmlns="http://www.w3.org/2000/svg"*/}
+                {/*    fill="none"*/}
+                {/*    viewBox="0 0 24 24"*/}
+                {/*    strokeWidth={1.5}*/}
+                {/*    stroke="currentColor"*/}
+                {/*    className="w-6 h-6"*/}
+                {/*>*/}
+                {/*    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"/>*/}
+                {/*</svg>*/}
+                <div />
+                <div />
             </div>
 
             <div className={styles.mobileNavbar}>
-                <p>HOME</p>
-                <p>WHY US</p>
-                <p>ABOUT</p>
+                <a href={"#"}>HOME</a>
+                <a href={"#whyUs"}>WHY US</a>
+                <a href={"#about"} >ABOUT</a>
             </div>
         </nav>
     );

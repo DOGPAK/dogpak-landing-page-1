@@ -52,18 +52,31 @@
 
 .burger {
     display: none;
-    width: 50px;
+    width: 35px;
     z-index: 2;
     transition: 0.1s all ease-in-out;
     cursor: pointer;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.burger:hover {
+.burger > div {
+    height: 2px;
+    background-color: white;
+    transition: 0.1s all ease-in-out;
+}
 
+.activeBurger > div:first-child {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.activeBurger > div:last-child {
+    transform: rotate(-45deg) translateY(-10px) translateX(-2px);
 }
 
 .mobileNavbar {
-    display: none;
+    display: flex;
+    opacity: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -76,13 +89,28 @@
     width: 100%;
     z-index: 1;
     gap: 5rem;
+    transform: translateY(-100%);
+    transition: all 0.75s ease-in-out;
 }
 
 .show {
-    display: flex;
+    opacity: 1;
+    /*z-index: 1;*/
+    transform: translateY(0%);
 }
 
-.mobileNavbar > p {
+@keyframes mobile {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.mobileNavbar > a {
     padding-bottom: 25px;
     width: 60%;
     font-size: 24px;
@@ -90,7 +118,7 @@
     transition: 0.1s all ease-in-out;
 }
 
-.mobileNavbar > p:hover {
+.mobileNavbar > a:hover {
     font-weight: bold;
     width: 75%;
     border-color: #C76A49;
@@ -121,6 +149,6 @@
     }
 
     .burger {
-        display: block;
+        display: flex;
     }
 }
