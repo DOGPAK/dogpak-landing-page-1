@@ -10,7 +10,7 @@ const Advantages = () => {
             <div className={styles.advantageRow}>
                 <div className={styles.advantage}>
                     <h1>Highly Water Resistant</h1>
-                    <p>In rain, dew, snow, or when your pup decides it's time for a dip in the creek!</p>
+                    <p>In rain, dew, snow, or when your pup decides it&apos;s time for a dip in the creek!</p>
                 </div>
                 <div className={styles.advantage}>
                     <h1>PU2000 fabric coating</h1>

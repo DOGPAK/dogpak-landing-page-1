@@ -12,7 +12,7 @@ const Story = () => {
                     <div className={styles.textParagraphs}>
                         <p>
                             As a family-owned outdoor K9 gear and content company, DOGPAK is fueled by the nostalgia of our
-                            founder's personal travels around the world with their beloved service dog, Thunder. Over 13
+                            founder&apos;s personal travels around the world with their beloved service dog, Thunder. Over 13
                             years,
                             we hiked across 45 states and 30 countries, and discovered that the most cherished memories were
                             created during the challenging and unpredictable moments—the missed switchbacks, the moonlit
@@ -24,9 +24,9 @@ const Story = () => {
                         <p>
                             We believe that our furry companions deserve the latest and greatest technology in their gear,
                             just
-                            like we do. That's why we designed the first ultralight dog daypack with the latest technology
+                            like we do. That&apos;s why we designed the first ultralight dog daypack with the latest technology
                             for
-                            your furry friend. It's slim, lightweight, and versatile for daily use or adventures, keeping
+                            your furry friend. It&apos;s slim, lightweight, and versatile for daily use or adventures, keeping
                             your
                             pup safe and comfortable.
                         </p>

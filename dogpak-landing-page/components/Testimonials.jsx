@@ -32,14 +32,14 @@ const Testimonials = () => {
 
             <div className={styles.testimonials} ref={scrollRef}>
                 {testimonialsData.map(testimonial => (
-                    <div className={styles.testimonial}>
+                    <div className={styles.testimonial} key={testimonial.companyName}>
                         <div className={styles.testimonialHeading}>
                             <h1>{testimonial.companyName}</h1>
                             <p>{testimonial.companyInfo}</p>
                         </div>
 
                         <p className={styles.testimonialDescription}>
-                            "{testimonial.comment}"
+                            &quot;{testimonial.comment}&quot;
                         </p>
                     </div>
                 ))}
