@@ -6,8 +6,8 @@ import { useState } from "react";
 const Cta = () => {
     const [email, setEmail] = useState("");
 
-    const subscribe = async () => {
-
+    const subscribe = async (e) => {
+        e.preventDefault();
         await subscribeUser(email);
 
         setEmail("");
@@ -22,7 +22,7 @@ const Cta = () => {
             <p>fully funded on indigogo</p>
 
             <div className={styles.inputs}>
-                <div className={styles.emailGroup}>
+                <form className={styles.emailGroup} onSubmit={subscribe}>
                     <input
                         type={"email"}
                         placeholder={"your email address"}
@@ -30,8 +30,8 @@ const Cta = () => {
                         onChange={e => setEmail(e.target.value)}
                         className={styles.emailInput}
                     />
-                    <button className={styles.emailButton} onClick={subscribe}>SUBSCRIBE</button>
-                </div>
+                    <button className={styles.emailButton} type={"submit"}>SUBSCRIBE</button>
+                </form>
                 <a
                     className={styles.buyButton}
                     href={"https://www.indiegogo.com/projects/waterproof-dog-backpack-for-k9-rescue-adventure#/"}

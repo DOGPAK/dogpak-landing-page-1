@@ -44,24 +44,14 @@ const Navbar = () => {
             >BUY NOW</a>
 
             <div className={styles.burger} onClick={showNavbar}>
-                {/*<svg*/}
-                {/*    xmlns="http://www.w3.org/2000/svg"*/}
-                {/*    fill="none"*/}
-                {/*    viewBox="0 0 24 24"*/}
-                {/*    strokeWidth={1.5}*/}
-                {/*    stroke="currentColor"*/}
-                {/*    className="w-6 h-6"*/}
-                {/*>*/}
-                {/*    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"/>*/}
-                {/*</svg>*/}
                 <div />
                 <div />
             </div>
 
             <div className={styles.mobileNavbar}>
-                <a href={"#"}>HOME</a>
-                <a href={"#whyUs"}>WHY US</a>
-                <a href={"#about"} >ABOUT</a>
+                <a href={"#"} onClick={() => showNavbar()}>HOME</a>
+                <a href={"#whyUs"} onClick={() => showNavbar()}>WHY US</a>
+                <a href={"#about"}  onClick={() => showNavbar()}>ABOUT</a>
             </div>
         </nav>
     );

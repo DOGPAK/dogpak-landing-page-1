@@ -18,9 +18,9 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.navLinks}>
-                    <a>Home</a>
-                    <a>About Us</a>
-                    <a>Why Us</a>
+                    <a href={"#"}>Home</a>
+                    <a href={"#about"}>About Us</a>
+                    <a href={"#whyUs"}>Why Us</a>
                 </div>
 
                 <EmailInput/>
