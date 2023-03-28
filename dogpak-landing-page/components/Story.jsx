@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Story = () => {
     return (
-        <div className={styles.holder}>
+        <div className={styles.holder} id={"about"}>
             <div className={styles.text}>
                 <div className={styles.textContent}>
                     <h1>Our Story</h1>

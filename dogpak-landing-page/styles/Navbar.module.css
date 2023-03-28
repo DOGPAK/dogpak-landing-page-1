@@ -28,20 +28,17 @@
 }
 
 
-.navLinks > p::after {
+.activeLink::after {
     content: "";
     display: block;
-    opacity: 0;
     height: 2px;
     background: #C76A49;
     transition: width .3s;
 }
 
-.navLinks > p:first-child {
+
+.activeLink {
     font-weight: 700;
-}
-.navLinks > p:first-child::after {
-    opacity: 1;
 }
 
 

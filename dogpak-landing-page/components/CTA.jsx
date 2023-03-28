@@ -11,7 +11,7 @@ const Cta = () => {
         await subscribeUser(email);
 
         setEmail("");
-    }
+    };
     return (
         <div className={styles.holder}>
             <div className={styles.text}>
@@ -32,7 +32,11 @@ const Cta = () => {
                     />
                     <button className={styles.emailButton} onClick={subscribe}>SUBSCRIBE</button>
                 </div>
-                <button className={styles.buyButton}>BUY NOW</button>
+                <a
+                    className={styles.buyButton}
+                    href={"https://www.indiegogo.com/projects/waterproof-dog-backpack-for-k9-rescue-adventure#/"}
+                    target={"_blank"}
+                >BUY NOW</a>
             </div>
 
         </div>

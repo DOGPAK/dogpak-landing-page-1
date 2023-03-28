@@ -23,14 +23,14 @@ const Footer = () => {
                     <a>Why Us</a>
                 </div>
 
-                <EmailInput />
+                <EmailInput/>
             </div>
 
             <div className={styles.right}>
                 <div className={styles.socials}>
-                    <Image src={facebook} alt={"facebook"} className={styles.socialImage}/>
-                    <Image src={instagram} alt={"instagram"} className={styles.socialImage}/>
-                    <Image src={youtube} alt={"youtube"} className={styles.socialImage}/>
+                    <a href={"https://www.facebook.com/thedogpak/"} target={"_blank"}><Image src={facebook} alt={"facebook"} className={styles.socialImage}/></a>
+                    <a href={"https://www.instagram.com/thedogpak/"} target={"_blank"}><Image src={instagram} alt={"instagram"} className={styles.socialImage}/></a>
+                    <a href={"https://www.youtube.com/@dogpak5357"} target={"_blank"}><Image src={youtube} alt={"youtube"} className={styles.socialImage}/></a>
                 </div>
 
                 <p className={styles.copyright}>Copyright © 2023, DOGPAK.</p>

@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import styles from "../styles/Testimonials.module.css";
+import testimonialsData from "@/components/testimonialsData";
 
 const Testimonials = () => {
     const scrollRef = useRef(null);
@@ -30,74 +31,86 @@ const Testimonials = () => {
             </svg>
 
             <div className={styles.testimonials} ref={scrollRef}>
-                <div className={styles.testimonial}>
-                    <div className={styles.testimonialHeading}>
-                        <h1>1</h1>
-                        <p>Suburban Chicago’s Information Store</p>
+                {testimonialsData.map(testimonial => (
+                    <div className={styles.testimonial}>
+                        <div className={styles.testimonialHeading}>
+                            <h1>{testimonial.companyName}</h1>
+                            <p>{testimonial.companyInfo}</p>
+                        </div>
+
+                        <p className={styles.testimonialDescription}>
+                            "{testimonial.comment}"
+                        </p>
                     </div>
+                ))}
+                {/*<div className={styles.testimonial}>*/}
+                {/*    <div className={styles.testimonialHeading}>*/}
+                {/*        <h1>1</h1>*/}
+                {/*        <p>Suburban Chicago’s Information Store</p>*/}
+                {/*    </div>*/}
 
-                    <p className={styles.testimonialDescription}>
-                        "A new style of dog backpack: one that focuses on conserving weight, minimizing bulk, and
-                        optimizing fit to minimize slipping."
-                    </p>
-                </div>
-                <div className={styles.testimonial}>
-                    <div className={styles.testimonialHeading}>
-                        <h1>2</h1>
-                        <p>Suburban Chicago’s Information Store</p>
-                    </div>
+                {/*    <p className={styles.testimonialDescription}>*/}
+                {/*        "A new style of dog backpack: one that focuses on conserving weight, minimizing bulk, and*/}
+                {/*        optimizing fit to minimize slipping."*/}
+                {/*    </p>*/}
+                {/*</div>*/}
+                {/*<div className={styles.testimonial}>*/}
+                {/*    <div className={styles.testimonialHeading}>*/}
+                {/*        <h1>2</h1>*/}
+                {/*        <p>Suburban Chicago’s Information Store</p>*/}
+                {/*    </div>*/}
 
-                    <p className={styles.testimonialDescription}>
-                        "A new style of dog backpack: one that focuses on conserving weight, minimizing bulk, and
-                        optimizing fit to minimize slipping."
-                    </p>
-                </div>
+                {/*    <p className={styles.testimonialDescription}>*/}
+                {/*        "A new style of dog backpack: one that focuses on conserving weight, minimizing bulk, and*/}
+                {/*        optimizing fit to minimize slipping."*/}
+                {/*    </p>*/}
+                {/*</div>*/}
 
-                <div className={styles.testimonial}>
-                    <div className={styles.testimonialHeading}>
-                        <h1>3</h1>
-                        <p>Suburban Chicago’s Information Store</p>
-                    </div>
+                {/*<div className={styles.testimonial}>*/}
+                {/*    <div className={styles.testimonialHeading}>*/}
+                {/*        <h1>3</h1>*/}
+                {/*        <p>Suburban Chicago’s Information Store</p>*/}
+                {/*    </div>*/}
 
-                    <p className={styles.testimonialDescription}>
-                        "A new style of dog backpack: one that focuses on conserving weight, minimizing bulk, and
-                        optimizing fit to minimize slipping."
-                    </p>
-                </div>
-                <div className={styles.testimonial}>
-                    <div className={styles.testimonialHeading}>
-                        <h1>4</h1>
-                        <p>Suburban Chicago’s Information Store</p>
-                    </div>
+                {/*    <p className={styles.testimonialDescription}>*/}
+                {/*        "A new style of dog backpack: one that focuses on conserving weight, minimizing bulk, and*/}
+                {/*        optimizing fit to minimize slipping."*/}
+                {/*    </p>*/}
+                {/*</div>*/}
+                {/*<div className={styles.testimonial}>*/}
+                {/*    <div className={styles.testimonialHeading}>*/}
+                {/*        <h1>4</h1>*/}
+                {/*        <p>Suburban Chicago’s Information Store</p>*/}
+                {/*    </div>*/}
 
-                    <p className={styles.testimonialDescription}>
-                        "A new style of dog backpack: one that focuses on conserving weight, minimizing bulk, and
-                        optimizing fit to minimize slipping."
-                    </p>
-                </div>
+                {/*    <p className={styles.testimonialDescription}>*/}
+                {/*        "A new style of dog backpack: one that focuses on conserving weight, minimizing bulk, and*/}
+                {/*        optimizing fit to minimize slipping."*/}
+                {/*    </p>*/}
+                {/*</div>*/}
 
-                <div className={styles.testimonial}>
-                    <div className={styles.testimonialHeading}>
-                        <h1>5</h1>
-                        <p>Suburban Chicago’s Information Store</p>
-                    </div>
+                {/*<div className={styles.testimonial}>*/}
+                {/*    <div className={styles.testimonialHeading}>*/}
+                {/*        <h1>5</h1>*/}
+                {/*        <p>Suburban Chicago’s Information Store</p>*/}
+                {/*    </div>*/}
 
-                    <p className={styles.testimonialDescription}>
-                        "A new style of dog backpack: one that focuses on conserving weight, minimizing bulk, and
-                        optimizing fit to minimize slipping."
-                    </p>
-                </div>
-                <div className={styles.testimonial}>
-                    <div className={styles.testimonialHeading}>
-                        <h1>6</h1>
-                        <p>Suburban Chicago’s Information Store</p>
-                    </div>
+                {/*    <p className={styles.testimonialDescription}>*/}
+                {/*        "A new style of dog backpack: one that focuses on conserving weight, minimizing bulk, and*/}
+                {/*        optimizing fit to minimize slipping."*/}
+                {/*    </p>*/}
+                {/*</div>*/}
+                {/*<div className={styles.testimonial}>*/}
+                {/*    <div className={styles.testimonialHeading}>*/}
+                {/*        <h1>6</h1>*/}
+                {/*        <p>Suburban Chicago’s Information Store</p>*/}
+                {/*    </div>*/}
 
-                    <p className={styles.testimonialDescription}>
-                        "A new style of dog backpack: one that focuses on conserving weight, minimizing bulk, and
-                        optimizing fit to minimize slipping."
-                    </p>
-                </div>
+                {/*    <p className={styles.testimonialDescription}>*/}
+                {/*        "A new style of dog backpack: one that focuses on conserving weight, minimizing bulk, and*/}
+                {/*        optimizing fit to minimize slipping."*/}
+                {/*    </p>*/}
+                {/*</div>*/}
             </div>
 
             <svg
