@@ -21,7 +21,7 @@ const Advantages = () => {
                     <p>Welded tie-down patches and Fully taped seams</p>
                 </div>
             </div>
-            <Image src={advantage_image_1} alt={"dog"} className={styles.advantageImage}/>
+            <Image src={advantage_image_1} alt={"dog"} className={styles.advantageImage} id={styles.image_1} />
             <div className={styles.advantageRow}>
                 <div className={styles.advantage}>
                     <h1>Highly reflective trim & stripes</h1>
@@ -36,7 +36,7 @@ const Advantages = () => {
                     <p>Centers load on shoulders, reduces weight, and works as a walking harness</p>
                 </div>
             </div>
-            <Image src={advantage_image_2} alt={"dog"} className={styles.advantageImage}/>
+            <Image src={advantage_image_2} alt={"dog"} className={styles.advantageImage} id={styles.image_2}/>
             <div className={styles.advantageRow}>
                 <div className={styles.advantage}>
                     <h1>Prevents slipping</h1>
