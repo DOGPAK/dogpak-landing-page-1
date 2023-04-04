@@ -23,7 +23,7 @@ export default async function (email) {
             "Content-Type": "application/json",
         },
         method: "POST"
-    });
+    }).then(() => window.location.href = "/thank-you");;
 
     // const res = await fetch("/api/subscribe", {
     //     body: JSON.stringify({
