@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "../styles/Hero.module.css";
 import EmailInput from "@/components/EmailInput";
+
+import styles from "../styles/Hero.module.css";
 
 const Hero = () => {
     return (

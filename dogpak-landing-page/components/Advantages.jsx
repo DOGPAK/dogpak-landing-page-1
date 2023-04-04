@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "../styles/Advantages.module.css";
 import advantage_image_1 from "../static/advantage_image_1.png";
-import advantage_image_2 from "../static/advantage_image_2.png";
+
 import Image from "next/image";
+
+import advantage_image_2 from "../static/advantage_image_2.png";
 
 const Advantages = () => {
     return (
@@ -21,7 +23,9 @@ const Advantages = () => {
                     <p>Welded tie-down patches and Fully taped seams</p>
                 </div>
             </div>
+
             <Image src={advantage_image_1} alt={"dog"} className={styles.advantageImage} id={styles.image_1} />
+
             <div className={styles.advantageRow}>
                 <div className={styles.advantage}>
                     <h1>Highly reflective trim & stripes</h1>

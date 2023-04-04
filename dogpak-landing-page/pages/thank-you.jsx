@@ -3,8 +3,7 @@ import Footer from "@/components/Footer";
 import styles from "../styles/ThankYou.module.css";
 import Head from "next/head";
 
-const ThankYou = () => {
-
+export default function ThankYou() {
     return (
         <>
             <Head>
@@ -86,5 +85,3 @@ const ThankYou = () => {
         </>
     );
 };
-
-export default ThankYou;
