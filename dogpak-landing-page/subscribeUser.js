@@ -6,16 +6,24 @@ export default async function (email) {
 
     console.log(`Bearer ${process.env.NEXT_PUBLIC_API_KEY}`);
 
-    const res = await fetch("https://connect.mailerlite.com/api/subscribers", {
-        method: "POST",
+    // const res = await fetch("https://connect.mailerlite.com/api/subscribers", {
+    //     method: "POST",
+    //     headers: {
+    //         "Content-Type": "application/json",
+    //         "Accept": "application/json",
+    //         "Authorization": `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`
+    //     },
+    //     body: JSON.stringify({ email: email })
+    // }).then(() => window.location.href = "/thank-you")
+    //     .catch(() => alert("Something went wrong. Please try again later."));
+
+    const res = await fetch("/api/subscribe", {
+        body: JSON.stringify({email: email}),
         headers: {
             "Content-Type": "application/json",
-            "Accept": "application/json",
-            "Authorization": `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`
         },
-        body: JSON.stringify({ email: email })
-    }).then(() => window.location.href = "/thank-you")
-        .catch(() => alert("Something went wrong. Please try again later."));
+        method: "POST"
+    });
 
     // const res = await fetch("/api/subscribe", {
     //     body: JSON.stringify({

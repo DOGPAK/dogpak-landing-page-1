@@ -1,39 +1,20 @@
-import MailerLite from '@mailerlite/mailerlite-nodejs';
-
-const mailerlite = new MailerLite({
-    api_key: process.env.API_KEY
-});
-
 export default async (req, res) => {
-    const { email } = req.body;
+    const { email: emailAddress } = req.body;
 
-    const data = {
-        email: email
-    }
-
-    if (!email) {
+    if (!emailAddress) {
         return res.status(400).json({ error: "Email is required" });
     }
 
     try {
         const response = await fetch("https://connect.mailerlite.com/api/subscribers", {
-            body: JSON.stringify(data),
+            method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                // "Accept": "application/json",
-                "Authorization": "fjdaskl;fjdas"
+                "Accept": "application/json",
+                "Authorization": `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`
             },
-            method: "POST"
+            body: JSON.stringify({ email: emailAddress })
         });
-
-        console.log(response);
-
-        if (response.status >= 400) {
-            return res.status(400)
-                .json({ error: `There was an error subscribing to the newsletter. Try again later.` });
-        }
-
-        return res.status(201).json({ error: "" });
     } catch (error) {
         return res.status(500).json({ error: error.message || error.toString() });
     }
