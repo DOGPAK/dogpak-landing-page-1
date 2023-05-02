@@ -20,7 +20,7 @@ const Advantages = () => {
                 </div>
                 <div className={styles.advantage}>
                     <h1>PU coated YKK zippers</h1>
-                    <p>Welded tie-down patches and Fully taped seams</p>
+                    <p>Welded tie-down patches and fully taped seams</p>
                 </div>
             </div>
 
